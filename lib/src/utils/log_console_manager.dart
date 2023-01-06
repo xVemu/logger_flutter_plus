@@ -18,8 +18,11 @@ class LogConsoleManager extends ChangeNotifier {
   String _filterText = '';
 
   List<LogRenderedEvent> get logs => _buffer
-      .where((element) => _filterLevel == null ? true : element.level == _filterLevel)
-      .where((element) => _filterText.isEmpty ? true : element.lowerCaseText.contains(_filterText))
+      .where((element) =>
+          _filterLevel == null ? true : element.level == _filterLevel)
+      .where((element) => _filterText.isEmpty
+          ? true
+          : element.lowerCaseText.contains(_filterText))
       .toList();
 
   void setFilterLevel(Level? level) {

@@ -54,7 +54,9 @@ class DefaultShakeDetector implements ShakeDetector {
         .map((lastShakeTimestamp) {
           var now = DateTime.now().millisecondsSinceEpoch;
 
-          _shakeCount = lastShakeTimestamp + shakeCountResetTime < now ? 0 : _shakeCount + 1;
+          _shakeCount = lastShakeTimestamp + shakeCountResetTime < now
+              ? 0
+              : _shakeCount + 1;
           _lastShakeTimestamp = now;
 
           return _shakeCount;

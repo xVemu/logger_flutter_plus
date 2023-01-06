@@ -43,7 +43,8 @@ class _LogConsoleWidgetState extends State<LogConsoleWidget> {
   Future<void> _checkScrollPosition({Duration delay = Duration.zero}) async {
     await Future.delayed(delay);
 
-    final scrolledToBottom = _scrollController.offset >= _scrollController.position.maxScrollExtent;
+    final scrolledToBottom =
+        _scrollController.offset >= _scrollController.position.maxScrollExtent;
 
     if (_followBottom != scrolledToBottom) {
       setState(() {
@@ -52,7 +53,8 @@ class _LogConsoleWidgetState extends State<LogConsoleWidget> {
     }
   }
 
-  void _updateLogManagerCallback() => _checkScrollPosition(delay: const Duration(milliseconds: 400));
+  void _updateLogManagerCallback() =>
+      _checkScrollPosition(delay: const Duration(milliseconds: 400));
 
   @override
   void dispose() {
