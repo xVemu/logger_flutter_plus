@@ -1,6 +1,6 @@
 name: logger_flutter_plus
 description: Flutter extension for logger. Please go there for documentation.
-version: 1.1.0
+version: 1.1.1
 
 homepage: https://github.com/Oliinyk-Volodymyr/logger_flutter_plus
 
@@ -13,4 +13,4 @@ dependencies:
 
   logger: ^2.0.2+1
   collection: ^1.18.0
-  sensors_plus: ^4.0.2
+  sensors_plus: ^6.1.2

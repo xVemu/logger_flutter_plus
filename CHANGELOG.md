@@ -1,3 +1,5 @@
+## 1.1.1
+- update sensors_plus dependency
 ## 1.1.0
 - update dependencies
 ## 1.0.5
